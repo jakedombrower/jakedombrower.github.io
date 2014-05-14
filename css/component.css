@@ -54,7 +54,7 @@
 	display: inline-block;
 	color: #aaaaaa;
 	cursor: pointer;
-	border-bottom: 1px dashed #b14943;
+	border-bottom: 1px dashed #33b5e5;
 }
 
 /* drop-down list / text element */
@@ -213,8 +213,8 @@ input:focus::-ms-input-placeholder {
 	text-transform: uppercase;
 	cursor: pointer;
 	position: relative;
-	background: #76C3BD;
-	color: #fff;
+	background: #4BDC62;
+	color: #000;
 	padding: 0 1em 0 0;
 	font-size: 40%;
 	font-weight: bold;
@@ -222,21 +222,21 @@ input:focus::-ms-input-placeholder {
 }
 
 .nl-submit:before {
-	content: "\e001";
+	content: "";
 	color: #fff;
-	float: left;
+	float: center;
 	padding: 0 0.7em;
 	margin: 0 0.8em 0 0;
-	background: #69B1A9;
+	background: #4BDC62;
 }
 
 .no-touch .nl-form .nl-submit:hover,
 .no-touch .nl-form .nl-submit:active {
-	background: #69B1A9;
+	background: #3CB04E;
 }
 
 .no-touch .nl-form .nl-submit:hover:before {
-	background: #58a199;
+	background: #3CB04E;
 }
 
 /* overlay becomes visible when a field is opened */
