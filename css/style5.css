@@ -227,7 +227,7 @@ body  {
 
 .bt-menu ul li a:before {
 	color: #fff;
-	font-size: 1em;
+	font-size: 24px;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
