@@ -9,6 +9,7 @@
 		<meta name="keywords" content="navigation, menu, responsive, border, overlay, css transition" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/icons.css" />
@@ -16,7 +17,7 @@
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body>
-		<section style="background-image:url('img/blur1.jpg'); height: 26em;"></section>
+		<section style="background-image:url('img/blur1.jpg'); height: 30em;"></section>
 
 		<section>
 			<div class="container">
@@ -24,8 +25,21 @@
 				<header class="codrops-header">
 					<img style="width: 15em; margin-top: -15em; text-align:;" src="img/round.png">
 					<h1>Jake Dombrower <span>Give me a computer and I will change the world</h1>
+					<br/>
+					<h3><a href="#bio">MY BIO</a></h3>
 					
 				</header>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="col-md-6 col-md-offset-3" style="color= #444444;" id="bio">
+					<h4>Programming. Some hide in fear when they hear about it, and some get pumped. Im the latter of the two. For as long as I can remember I have been interested in technology. In elementary school I messed around with batch, and in middle school I played with BASIC. However, by the time highschool came around, things got real.  </h4>
+					<h4>Freshman year I started with Rails. Although a challenge it proved to be at first, practice made (almost) perfect and Rails became my specialty. If somebody needed a wesite, I was their guy. </h4>
+					<h4>Well, here I am. One year and a plethora of projects later. My typical day consists of 3 things: Food, Sleep, and Programming. What started as a passion, eventually became my life.</h4>
+				</div>
+			</div>
+		</section>
 				
 				<nav id="bt-menu" class="bt-menu">
 					<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
@@ -42,10 +56,25 @@
 						<li><a href="https://github.com/jakedombrower" class="bt-icon icon-github">icon-github</a></li>
 					</ul>
 				</nav>
-			</div><!-- /container -->
-		</section>
+		
 	</body>
 	<script src="js/classie.js"></script>
 	<script src="js/borderMenu.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js"type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+	</script>
 </html>
