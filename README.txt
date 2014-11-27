@@ -1,4 +1,4 @@
-This is my personal resume website. Not much to see in this repo. Thanks to HTM5UP for the template!
+This is my personal resume website. Not much to see in this repo. Thanks to @n33co and HTM5UP for the template!
 
 
 Read Only by HTML5 UP
